@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook: Stars Fan Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="guestbook.js"></script>
+</head>
+<body>
+<div class="main">
+    <ul id="nav">
+        <li class="link"><a href="index.html">Home</a></li>
+        <li class="link"><a href="roster.html">Team Roster</a></li>
+        <li class="link"><a href="schedule.html">Schedule</a></li>
+        <li class="link"><a href="standings.html">Standings</a></li>
+        <li class="link"><a href="teaminfo.html">Team and Arena Info</a></li>
+        <li class="link"><a href="guestbook.html">Guestbook</a></li>
+    </ul>
+    <h1>Guestbook</h1>
+
+    <h3>Sign the guestbook!</h3>
+
+    <form method="get" action="index.html" name="guestbook" onsubmit="return validateForm()">
+        <label>Name:</label>
+        <br>
+        <input type="text" name="name" size="25">
+        <br><br>
+        <label>Email:</label>
+        <br>
+        <input type="text" name="email" size="30">
+        <br><br>
+        <label>Message:</label>
+        <br>
+        <textarea name="message" rows="5" cols="30">Enter message.</textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+</div>
+</body>
+</html>
